@@ -1,1 +1,137 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* this is where my style begins */
+
+body {
+    background: wheat;
+}
+
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* add css animation to hover over button, inverting colors */
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+.name {
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+
+nav a {
+    border: 1px solid black;
+    padding: 5px;
+    font-family: 'Amatic SC', cursive;
+}
+
+#about { 
+    display: flex; 
+    justify-content: center;
+    position: relative;
+}
+
+#about img {
+    width: 60%;
+    height: auto;
+    opacity: 0.75;
+    margin: 3%;
+}
+
+/* flex-box and position to get text and button on top of image, made image translucent to see it better*/
+#about .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text a {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 30px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-evenly;
+}
+
+#projects div {
+    width: 20%;
+    margin: 3%;
+    font-size: 20px;
+    font-family: 'Pompiere', cursive;
+    text-align: center;
+}
+
+#projects div img {
+    width: 100%;
+    height: auto;
+}
+
+#projects div p {
+    font-size: 15px;
+}
+
+footer {
+    background-color: white;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+/* matched the footer button to the header button style */
+footer a {
+    font-size: 35px;
+    border: 2px solid black
+}
+
+
