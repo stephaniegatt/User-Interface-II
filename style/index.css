@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
@@ -32,15 +32,7 @@ body {
     background: wheat;
 }
 
-
-header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 15px;
-}
-
+/* remove all hyperlink text design from all a tags */
 a {
     text-decoration: none;
     color: black;
@@ -52,15 +44,23 @@ a:hover {
     color: white;
 }
 
-.name {
-    font-size: 30px;
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1%;
+}
+
+header .name {
+    font-size: 3rem;
     font-family: 'Amatic SC', cursive;
 }
 
-nav a {
-    border: 1px solid black;
-    padding: 5px;
+header nav a {
+    border: .1rem solid black;
     font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
 }
 
 #about { 
@@ -69,21 +69,21 @@ nav a {
     position: relative;
 }
 
+/* flex-box and position to get text and button on top of image, made image translucent to see it better*/
 #about img {
-    width: 60%;
+    width: 65%;
     height: auto;
     opacity: 0.75;
-    margin: 3%;
+    margin: 1.5%;
 }
 
-/* flex-box and position to get text and button on top of image, made image translucent to see it better*/
 #about .header-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Amatic SC', cursive;
-    font-size: 60px;
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,7 +93,12 @@ nav a {
 .header-text a {
     border: 1px solid black;
     background-color: white;
-    font-size: 30px;
+    font-size: 2rem;
+}
+
+.header-text a:hover {
+    background-color: black;
+    color: white;
 }
 
 #projects {
@@ -105,7 +110,7 @@ nav a {
 #projects div {
     width: 20%;
     margin: 3%;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: 'Pompiere', cursive;
     text-align: center;
 }
@@ -116,7 +121,7 @@ nav a {
 }
 
 #projects div p {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 footer {
@@ -130,8 +135,12 @@ footer {
 
 /* matched the footer button to the header button style */
 footer a {
-    font-size: 35px;
-    border: 2px solid black
+    font-size: 3.5rem;
+    border: .2rem solid black
 }
+
+/* @media(max-width: 800px){
+
+} */
 
 
