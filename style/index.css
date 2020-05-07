@@ -54,16 +54,27 @@ header {
 
 header .name {
     font-size: 3rem;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC';
 }
+
+/* header nav {
+    width: 20%;
+} */
 
 header nav a {
     border: .1rem solid black;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC';
     font-size: 1.5rem;
+    /* added width to header nav to see if the padding would keep everything stays on the same line, when i add a padding to the nav anchors - only worked if the screen was over 1000px
+    padding: 0 .5%; */
 }
 
 #about { 
+    /* trying to figure out fixed background image for only #about section
+    background-image: url("https://images.unsplash.com/photo-1474974573965-2ed43d64cb45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+/* old code below */
     display: flex; 
     justify-content: center;
     position: relative;
@@ -82,7 +93,7 @@ header nav a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC';
     font-size: 4rem;
     display: flex;
     flex-direction: column;
@@ -111,7 +122,7 @@ header nav a {
     width: 20%;
     margin: 3%;
     font-size: 1.5rem;
-    font-family: 'Pompiere', cursive;
+    font-family: 'Pompiere';
     text-align: center;
 }
 
@@ -130,7 +141,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC';
 }
 
 /* matched the footer button to the header button style */
